@@ -1,10 +1,18 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import { Layout, Space, Typography } from 'antd'
+
+import {Navbar} from './components'
 
 const App = () => {
     return (
-        <div>
-            <h1>Hello world</h1>
-        </div>
+        <Router>
+            <div>
+                <div className='navbar'>
+                    <Navbar />
+                </div>
+            </div>
+        </Router>
     )
 }
 
