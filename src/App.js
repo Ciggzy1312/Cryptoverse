@@ -15,6 +15,7 @@ const App = () => {
 
                 <div className='main'>
                     <Layout>
+                        <div className='routes'>
                         <Switch>
                             <Route exact path='/'><HomePage /></Route>
 
@@ -26,6 +27,7 @@ const App = () => {
 
                             <Route exact path='/news'><News /></Route>
                         </Switch>
+                        </div>
                     </Layout>
 
                     <div className='footer'>
